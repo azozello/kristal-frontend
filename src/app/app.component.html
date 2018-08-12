@@ -1,2 +1,8 @@
-<app-login></app-login>
-<app-registration></app-registration>
+<main>
+  <router-outlet></router-outlet>
+  <h2 class="label">Landing page</h2>
+  <button [routerLink]="['/login']" class="btn btn-success">Log in</button>
+  <button [routerLink]="['/register']" class="btn btn-success">Sing up</button>
+  <button [routerLink]="['/protected']" class="btn btn-success">Protected link</button>
+</main>
+
